@@ -11,349 +11,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/src/style.css">
     <title>ELOS - Uma escola inclusiva à distância (EAD), com acessibilidade exclusiva para pessoas PCD!</title>
-    <style>
-        .nav a {
-    text-decoration: none;
-    color: blueviolet;
 
-}
-
-.link-rp a {
-    text-decoration: none;
-
-
-
-}
-
-.link-rp {
-    color: #5500a5;
-}
-
-html {
-    font-size: 1rem;
-}
-
-.btn.btn-outline-success:hover {
-    background-color: orange;
-    border-color: transparent;
-    color: #ffffff;
-    transform: scale(1.15);
-}
-
-.btn.btn-outline-success {
-
-    border-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    transition: transform 0.3s ease;
-
-}
-
-.banner {
-    width: 100%;
-    height: auto;
-}
-
-.banner-text {
-    color: white;
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    margin-right: 100px;
-}
-
-
-
-.nav-link {
-
-    color: #ffffff;
-    transition: transform 0.3s ease;
-    margin-right: 50px;
-
-}
-
-.nav-link:hover {
-
-    color: #ffffff;
-    transform: scale(1.15);
-
-}
-
-.nav-link {
-    position: relative;
-    text-decoration: none;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    /* Ajuste a altura conforme necessário */
-    background-color: orange;
-    /* Cor da linha */
-    bottom: -5px;
-    /* Espaço abaixo do link */
-    left: 0;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-.nav-link:hover::after {
-    transform: scaleX(1);
-}
-
-
-
-
-
-.navbar-brand img {
-    width: 100x;
-    height: 100px;
-    transition: transform 0.8s ease;
-    border-radius: 20px;
-
-}
-
-.navbar-brand:hover {
-    transform: scale(1.15);
-    border: 2px solid orange;
-
-}
-
-.navbar-brand {
-    transition: transform 0.8s ease;
-    border-radius: 20px;
-    margin-left: 35px;
-}
-
-.fade-in-left {
-    animation: fadeInLeft 3s ease-in-out;
-}
-
-.fade-in-right {
-    animation: fadeInRight 3s ease-in-out;
-}
-
-.certificado img {
-    width: 20%;
-    height: auto;
-
-}
-
-.video-container {
-    border: 1px solid orange;
-    border-radius: 25px;
-
-    opacity: 0;
-    animation: fadeIn 6s ease forwards;
-
-}
-
-.video-container h2 {
-    color: white;
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    margin-right: 100px;
-}
-
-.container-mood {
-
-    /* Borda fina */
-    margin: 20px;
-    /* Margem de 20px */
-    opacity: 0;
-    animation: fadeIn 10s ease forwards;
-    /* Animação de surgimento suave */
-}
-
-.container-mood {
-    color: white;
-
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    margin-right: 100px;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.slide-in-left {
-    animation: slideInLeft 6s ease forwards;
-}
-
-.slide-in-right {
-    animation: slideInRight 6s ease forwards;
-}
-
-@keyframes slideInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-
-
-
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 15s ease forwards;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-
-
-
-
-@media (max-width: 768px) {
-    .banner-text {
-        margin-right: 2px;
-
-    }
-
-    h1 {
-        font-size: 16px;
-    }
-
-    h4 {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 346px) {
-    .banner-text {
-        margin-right: 2px;
-
-    }
-
-    h1 {
-        font-size: 14px;
-    }
-
-    h4 {
-        font-size: 12px;
-    }
-}
-
-
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.cadastro {
-    animation: fadeIn 5s;
-}
-
-
-
-
-
-.img-cadastro {
-
-
-    animation: rotateAnimation 10s infinite, blink 8s linear infinite;
-}
-
-
-
-@keyframes rotateAnimation {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        transform: rotate(360deg);
-    }
-
-    62.5%,
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes blink {
-
-    0%,
-    50%,
-    100% {
-        opacity: 1;
-    }
-
-    25%,
-    75% {
-        opacity: 0;
-    }
-}
-    </style>
 </head>
 
 <body
@@ -404,156 +62,156 @@ html {
 
             </div>
 
-    </nav><hr class="col-md-8 ">
+    </nav>
+    <hr class="col-md-8 ">
 
-        <!--  O CORPO DA PÁGINA COMEÇA AQUI E VAI ATÉ O COMENTARIO "RODAPÉ" -->
+    <!--  O CORPO DA PÁGINA COMEÇA AQUI E VAI ATÉ O COMENTARIO "RODAPÉ" -->
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <!-- //O BR voce pode diminuir, ou tirar -->
-        <section class="">
-            <div class="container-fluid h-custom">
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                    <div class="col-md-9 col-lg-6 col-xl-5">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-                            class="img-fluid" alt="Sample image">
-                    </div>
-                    <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                        <form>
-                            <div
-                                class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-                                <p class="lead fw-normal mb-0 me-3">Acesse com</p>
-                                <button type="button" data-mdb-button-init data-mdb-ripple-init
-                                    class="btn btn-primary btn-floating mx-1">
-                                    <i class=""><img src="src/img/icons/facebook.png" alt=""></i>
-                                </button>
-
-                                <button type="button" data-mdb-button-init data-mdb-ripple-init
-                                    class="btn btn-primary btn-floating mx-1">
-                                    <i class="fab fa-twitter"></i>
-                                </button>
-
-                                <button type="button" data-mdb-button-init data-mdb-ripple-init
-                                    class="btn btn-primary btn-floating mx-1">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </button>
-                            </div>
-
-                            <div class="divider d-flex align-items-center my-4">
-                                <p class="text-center fw-bold mx-3 mb-0">Ou</p>
-                            </div>
-
-                            <!-- Email input -->
-                            <div data-mdb-input-init class="form-outline mb-4">
-                                <input type="email" id="form3Example3" class="form-control form-control-lg"
-                                    placeholder="Insira um email ou usuario cadastro" />
-                                <label class="form-label" for="form3Example3">Email ou usuário</label>
-                            </div>
-
-                            <!-- Password input -->
-                            <div data-mdb-input-init class="form-outline mb-3">
-                                <input type="password" id="form3Example4" class="form-control form-control-lg"
-                                    placeholder="Insira sua senha" />
-                                <label class="form-label" for="form3Example4">Senha</label>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <!-- Checkbox -->
-                                <div class="form-check mb-0">
-                                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
-                                    <label class="form-check-label" for="form2Example3">
-                                        Lembre-me
-                                    </label>
-                                </div>
-                                <a href="#!" class="text-body">Esqueceu sua senha?</a>
-                            </div>
-
-                            <div class="text-center text-lg-start mt-4 pt-2">
-                                <button type="button" data-mdb-button-init data-mdb-ripple-init
-                                    class="btn btn-primary btn-lg"
-                                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-                                <p class="small fw-bold mt-2 pt-1 mb-0">NÃO POSSUI UMA CONTA? <a href="inscricao.html"
-                                    class="btn btn-primary">Inscreva-se</a></p>
-                            </div>
-                                
-                        </form>
-                    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <!-- //O BR voce pode diminuir, ou tirar -->
+    <section class="">
+        <div class="container-fluid h-custom">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-9 col-lg-6 col-xl-5">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                        class="img-fluid" alt="Sample image">
                 </div>
-            </div>
+                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                    <form>
+                        <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                            <p class="lead fw-normal mb-0 me-3">Acesse com</p>
+                            <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                class="btn btn-primary btn-floating mx-1">
+                                <i class=""><img src="src/img/icons/facebook.png" alt=""></i>
+                            </button>
 
-        </section>
+                            <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                class="btn btn-primary btn-floating mx-1">
+                                <i class="fab fa-twitter"></i>
+                            </button>
 
-
-
-
-
-        <!-- RODAPÉ -->
-
-        <br><br>
-        <hr>
-        <br><br>
-        <footer class=" text-light" style="background-color:#abb4bb75 ; ">
-            <div class="container-fluid py-3">
-                <div class="row">
-                    <div class="col-4">
-                        <ul class="nav flex-column" style="text-decoration: none; color: rgb(103, 141, 175);">
-                            <br><br><br>
-                            <li class="nav-link"><a href="#">Retornar a página Inicial</a></li>
-                            <li class="nav-link"><a href="#">Sobre nós</a></li>
-                            <li class="nav-link"><a href="#">Contato</a></li>
-                            <li class="nav-link"><a href="#">Área do aluno</a></li>
-                            <li class="nav-link"><a href="#">Programa Jovem Aprendiz</a></li>
-                            <li class="nav-link"><a href="#">Suporte</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-8">
-                        <p>
-
-                        </p>
-
-                        <div class="link-rp">
-
-
-                            <p>
-                                <strong>Sobre nós:</strong> Saiba mais sobre nossa missão de oferecer educação inclusiva
-                                e
-                                acessível para todos.
-                            </p>
-
-                            <p><strong>Contato:</strong> Entre em contato conosco para mais informações ou suporte.</p>
-
-                            <p><strong>Suporte:</strong> Precisa de ajuda? Nossa equipe está pronta para assisti-lo.</p>
-
-                            <p><strong>Política de Privacidade:</strong> Leia nossa política de privacidade para
-                                entender
-                                como
-                                protegemos suas informações.</p>
-
-                            <p><strong>Termos de Uso:</strong> Conheça os termos e condições de uso do nosso site e
-                                serviços.
-                            </p> <br><br>
-                            <a href="https://www.seusite.com" target="_blank" style="margin-right: 10px;">
-                                <img src="src/img/icons/facebook.png" alt="Descrição da Imagem"
-                                    style="width: 32px; height: 32px;">
-                            </a>
-                            <a href="https://www.seusite.com" target="_blank" style="margin-right: 10px;">
-                                <img src="src/img/icons/instagram.png" alt="Descrição da Imagem"
-                                    style="width: 32px; height: 32px;">
-                            </a>
-                            <a href="https://www.seusite.com" target="_blank">
-                                <img src="src/img/icons/twitter-draw-logo.png" alt="Descrição da Imagem"
-                                    style="width: 32px; height: 32px;">
-                            </a>
+                            <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                class="btn btn-primary btn-floating mx-1">
+                                <i class="fab fa-linkedin-in"></i>
+                            </button>
                         </div>
 
+                        <div class="divider d-flex align-items-center my-4">
+                            <p class="text-center fw-bold mx-3 mb-0">Ou</p>
+                        </div>
 
+                        <!-- Email input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <input type="email" id="form3Example3" class="form-control form-control-lg"
+                                placeholder="Insira um email ou usuario cadastro" />
+                            <label class="form-label" for="form3Example3">Email ou usuário</label>
+                        </div>
 
-                    </div>
+                        <!-- Password input -->
+                        <div data-mdb-input-init class="form-outline mb-3">
+                            <input type="password" id="form3Example4" class="form-control form-control-lg"
+                                placeholder="Insira sua senha" />
+                            <label class="form-label" for="form3Example4">Senha</label>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Checkbox -->
+                            <div class="form-check mb-0">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                                <label class="form-check-label" for="form2Example3">
+                                    Lembre-me
+                                </label>
+                            </div>
+                            <a href="#!" class="text-body">Esqueceu sua senha?</a>
+                        </div>
+
+                        <div class="text-center text-lg-start mt-4 pt-2">
+                            <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                class="btn btn-primary btn-lg"
+                                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                            <p class="small fw-bold mt-2 pt-1 mb-0">NÃO POSSUI UMA CONTA? <a href="inscricao.html"
+                                    class="btn btn-primary">Inscreva-se</a></p>
+                        </div>
+
+                    </form>
                 </div>
             </div>
-            <div class="text-center" style="background-color:#abb4bb75 ; padding: 20px; color:rgb(103, 141, 175) ;">
-                &copy 2025 Copyright: <a href="#" style="text-decoration: none; color: rgb(103, 141, 175);">ELOS - Uma
-                    escola inclusiva à distância (EAD), com acessibilidade exclusiva para pessoas PCD!</a>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- RODAPÉ -->
+
+    <br><br>
+    <hr>
+    <br><br>
+    <footer class=" text-light" style="background-color:#abb4bb75 ; ">
+        <div class="container-fluid py-3">
+            <div class="row">
+                <div class="col-4">
+                    <ul class="nav flex-column" style="text-decoration: none; color: rgb(103, 141, 175);">
+                        <br><br><br>
+                        <li class="nav-link"><a href="#">Retornar a página Inicial</a></li>
+                        <li class="nav-link"><a href="#">Sobre nós</a></li>
+                        <li class="nav-link"><a href="#">Contato</a></li>
+                        <li class="nav-link"><a href="#">Área do aluno</a></li>
+                        <li class="nav-link"><a href="#">Programa Jovem Aprendiz</a></li>
+                        <li class="nav-link"><a href="#">Suporte</a></li>
+                    </ul>
+                </div>
+                <div class="col-8">
+                    <p>
+
+                    </p>
+
+                    <div class="link-rp">
+
+
+                        <p>
+                            <strong>Sobre nós:</strong> Saiba mais sobre nossa missão de oferecer educação inclusiva
+                            e
+                            acessível para todos.
+                        </p>
+
+                        <p><strong>Contato:</strong> Entre em contato conosco para mais informações ou suporte.</p>
+
+                        <p><strong>Suporte:</strong> Precisa de ajuda? Nossa equipe está pronta para assisti-lo.</p>
+
+                        <p><strong>Política de Privacidade:</strong> Leia nossa política de privacidade para
+                            entender
+                            como
+                            protegemos suas informações.</p>
+
+                        <p><strong>Termos de Uso:</strong> Conheça os termos e condições de uso do nosso site e
+                            serviços.
+                        </p> <br><br>
+                        <a href="https://www.seusite.com" target="_blank" style="margin-right: 10px;">
+                            <img src="src/img/icons/facebook.png" alt="Descrição da Imagem"
+                                style="width: 32px; height: 32px;">
+                        </a>
+                        <a href="https://www.seusite.com" target="_blank" style="margin-right: 10px;">
+                            <img src="src/img/icons/instagram.png" alt="Descrição da Imagem"
+                                style="width: 32px; height: 32px;">
+                        </a>
+                        <a href="https://www.seusite.com" target="_blank">
+                            <img src="src/img/icons/twitter-draw-logo.png" alt="Descrição da Imagem"
+                                style="width: 32px; height: 32px;">
+                        </a>
+                    </div>
+
+
+
+                </div>
             </div>
-        </footer>
+        </div>
+        <div class="text-center" style="background-color:#abb4bb75 ; padding: 20px; color:rgb(103, 141, 175) ;">
+            &copy 2025 Copyright: <a href="#" style="text-decoration: none; color: rgb(103, 141, 175);">ELOS - Uma
+                escola inclusiva à distância (EAD), com acessibilidade exclusiva para pessoas PCD!</a>
+        </div>
+    </footer>
 </body>
 
 </html>
