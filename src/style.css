@@ -6,13 +6,22 @@
 
 .link-rp a {
     text-decoration: none;
+    color: hsl(0, 0%, 100%);
+
+
+
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
 
 
 
 }
 
 .link-rp {
-    color: #5500a5;
+    color: hsl(0, 0%, 100%);
 }
 
 html {
@@ -46,6 +55,7 @@ html {
     padding: 10px;
     margin-right: 100px;
 }
+
 
 
 
@@ -119,11 +129,10 @@ html {
 .fade-in-right {
     animation: fadeInRight 3s ease-in-out;
 }
-
-.certificado img {
+.certificado img{
     width: 20%;
     height: auto;
-
+    
 }
 
 .video-container {
@@ -282,21 +291,22 @@ html {
     }
 }
 
-
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
+@media (min-width: 576px) {
+    body {
+        font-size: 0.7rem;
     }
 }
 
-.cadastro {
-    animation: fadeIn 5s;
+@media (min-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 1.1rem;
+    }
 }
 
 
@@ -308,34 +318,12 @@ html {
 
     animation: rotateAnimation 10s infinite, blink 8s linear infinite;
 }
-
-
-
-@keyframes rotateAnimation {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        transform: rotate(360deg);
-    }
-
-    62.5%,
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes blink {
-
-    0%,
-    50%,
-    100% {
-        opacity: 1;
-    }
-
-    25%,
-    75% {
+@keyframes fadeIn {
+    from {
         opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
