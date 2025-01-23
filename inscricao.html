@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/src/style.css">
     <title>ELOS - Uma escola inclusiva à distância (EAD), com acessibilidade exclusiva para pessoas PCD!</title>
     <style>
-       .nav a {
+        .nav a {
             text-decoration: none;
             color: blueviolet;
 
@@ -20,29 +20,284 @@
 
         .link-rp a {
             text-decoration: none;
-            color: hsl(0, 0%, 100%);
-
-
-
-        }
-
-        .nav-link a{
-            text-decoration: none;
-            color: hsl(0, 0%, 100%);
 
 
 
         }
 
         .link-rp {
-            color: hsl(0, 0%, 100%);
+            color: #5500a5;
         }
 
         html {
             font-size: 1rem;
         }
 
-      
+        .btn.btn-outline-success:hover {
+            background-color: orange;
+            border-color: transparent;
+            color: #ffffff;
+            transform: scale(1.15);
+        }
+
+        .btn.btn-outline-success {
+
+            border-color: rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
+            transition: transform 0.3s ease;
+
+        }
+
+        .banner {
+            width: 100%;
+            height: auto;
+        }
+
+        .banner-text {
+            color: white;
+            font-size: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            margin-right: 100px;
+        }
+
+
+
+        .nav-link {
+
+            color: #ffffff;
+            transition: transform 0.3s ease;
+            margin-right: 50px;
+
+        }
+
+        .nav-link:hover {
+
+            color: #ffffff;
+            transform: scale(1.15);
+
+        }
+
+        .nav-link {
+            position: relative;
+            text-decoration: none;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            /* Ajuste a altura conforme necessário */
+            background-color: orange;
+            /* Cor da linha */
+            bottom: -5px;
+            /* Espaço abaixo do link */
+            left: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            transform: scaleX(1);
+        }
+
+
+
+
+
+        .navbar-brand img {
+            width: 100x;
+            height: 100px;
+            transition: transform 0.8s ease;
+            border-radius: 20px;
+
+        }
+
+        .navbar-brand:hover {
+            transform: scale(1.15);
+            border: 2px solid orange;
+
+        }
+
+        .navbar-brand {
+            transition: transform 0.8s ease;
+            border-radius: 20px;
+            margin-left: 35px;
+        }
+
+        .fade-in-left {
+            animation: fadeInLeft 3s ease-in-out;
+        }
+
+        .fade-in-right {
+            animation: fadeInRight 3s ease-in-out;
+        }
+
+        .certificado img {
+            width: 20%;
+            height: auto;
+
+        }
+
+        .video-container {
+            border: 1px solid orange;
+            border-radius: 25px;
+
+            opacity: 0;
+            animation: fadeIn 6s ease forwards;
+
+        }
+
+        .video-container h2 {
+            color: white;
+            font-size: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            margin-right: 100px;
+        }
+
+        .container-mood {
+
+            /* Borda fina */
+            margin: 20px;
+            /* Margem de 20px */
+            opacity: 0;
+            animation: fadeIn 10s ease forwards;
+            /* Animação de surgimento suave */
+        }
+
+        .container-mood {
+            color: white;
+
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            margin-right: 100px;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .slide-in-left {
+            animation: slideInLeft 6s ease forwards;
+        }
+
+        .slide-in-right {
+            animation: slideInRight 6s ease forwards;
+        }
+
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+
+
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 15s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+
+
+
+
+        @media (max-width: 768px) {
+            .banner-text {
+                margin-right: 2px;
+
+            }
+
+            h1 {
+                font-size: 16px;
+            }
+
+            h4 {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 346px) {
+            .banner-text {
+                margin-right: 2px;
+
+            }
+
+            h1 {
+                font-size: 14px;
+            }
+
+            h4 {
+                font-size: 12px;
+            }
+        }
+
+
+
 
         @keyframes fadeIn {
             from {
@@ -58,18 +313,18 @@
             animation: fadeIn 5s;
         }
 
-        
 
-      
+
+
 
         .img-cadastro {
-            
-            
-            animation: rotateAnimation 10s infinite, blink 8s linear infinite; 
-        }
-       
 
-        
+
+            animation: rotateAnimation 10s infinite, blink 8s linear infinite;
+        }
+
+
+
         @keyframes rotateAnimation {
             0% {
                 transform: rotate(0deg);
@@ -79,17 +334,27 @@
                 transform: rotate(360deg);
             }
 
-            62.5%, 100% {
+            62.5%,
+            100% {
                 transform: rotate(360deg);
             }
         }
 
         @keyframes blink {
-            0%, 50%, 100% { opacity: 1; }
-            25%, 75% { opacity: 0; }
+
+            0%,
+            50%,
+            100% {
+                opacity: 1;
+            }
+
+            25%,
+            75% {
+                opacity: 0;
+            }
         }
 
-        
+
 
 
 
@@ -165,132 +430,130 @@
             </div>
 
     </nav>
-        <hr class="col-md-8 ">
+    <hr class="col-md-8 ">
 
-        <!--  O CORPO DA PÁGINA COMEÇA AQUI E VAI ATÉ O COMENTARIO "RODAPÉ" -->
+    <!--  O CORPO DA PÁGINA COMEÇA AQUI E VAI ATÉ O COMENTARIO "RODAPÉ" -->
 
-        <!-- //O BR voce pode diminuir, ou tirar -->
-        <br><br><br><br><br>
-        <div class="">
-            <section class="cadastro">
-                <div class="container-fluid h-custom">
-                    <div class="row d-flex justify-content-center align-items-center h-100">
-                        <div class="img-cadastro col-md-4">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-                                class="img-fluid" alt="Sample image">
-                        </div>
-                        <div class="col-md-7">
-                            <div class="row">
-                                <div class="col-md-6" style="background-color: #f8f9fa; ">
-                                    <form><br>
-                                        <div class="divider d-flex align-items-center my-4">
-                                            <p class="text-center fw-bold mx-3 mb-0">Formulário de Inscrição</p>
-                                        </div>
+    <!-- //O BR voce pode diminuir, ou tirar -->
+    <br><br><br><br><br>
+    <div class="">
+        <section class="cadastro">
+            <div class="container-fluid h-custom">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="img-cadastro col-md-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                            class="img-fluid" alt="Sample image">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-md-6" style="background-color: #f8f9fa; ">
+                                <form><br>
+                                    <div class="divider d-flex align-items-center my-4">
+                                        <p class="text-center fw-bold mx-3 mb-0">Formulário de Inscrição</p>
+                                    </div>
 
-                                        <!-- Nome input -->
-                                        <div data-mdb-input-init class="form-outline mb-4">
-                                            <input type="text" id="formNome" class="form-control form-control-lg"
-                                                placeholder="Insira seu nome" />
-                                            <label class="form-label" for="formNome">Nome</label>
-                                        </div>
+                                    <!-- Nome input -->
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input type="text" id="formNome" class="form-control form-control-lg"
+                                            placeholder="Insira seu nome" />
+                                        <label class="form-label" for="formNome">Nome</label>
+                                    </div>
 
-                                        <!-- RG input -->
-                                        <div data-mdb-input-init class="form-outline mb-4">
-                                            <input type="text" id="formRG" class="form-control form-control-lg"
-                                                placeholder="Insira seu RG" />
-                                            <label class="form-label" for="formRG">RG</label>
-                                        </div>
+                                    <!-- RG input -->
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input type="text" id="formRG" class="form-control form-control-lg"
+                                            placeholder="Insira seu RG" />
+                                        <label class="form-label" for="formRG">RG</label>
+                                    </div>
 
-                                        <!-- Idade input -->
-                                        <div data-mdb-input-init class="form-outline mb-4">
-                                            <input type="number" id="formIdade" class="form-control form-control-lg"
-                                                placeholder="Insira sua idade" />
-                                            <label class="form-label" for="formIdade">Idade</label>
-                                        </div>
+                                    <!-- Idade input -->
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input type="number" id="formIdade" class="form-control form-control-lg"
+                                            placeholder="Insira sua idade" />
+                                        <label class="form-label" for="formIdade">Idade</label>
+                                    </div>
 
-                                        <!-- Ano de Nascimento input -->
-                                        <div data-mdb-input-init class="form-outline mb-4">
-                                            <input type="number" id="formAnoNascimento"
-                                                class="form-control form-control-lg"
-                                                placeholder="Insira seu ano de nascimento" />
-                                            <label class="form-label" for="formAnoNascimento">Ano de Nascimento</label>
-                                        </div>
+                                    <!-- Ano de Nascimento input -->
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input type="number" id="formAnoNascimento" class="form-control form-control-lg"
+                                            placeholder="Insira seu ano de nascimento" />
+                                        <label class="form-label" for="formAnoNascimento">Ano de Nascimento</label>
+                                    </div>
 
-                                        <!-- Endereço input -->
-                                        <div data-mdb-input-init class="form-outline mb-4">
-                                            <input type="text" id="formEndereco" class="form-control form-control-lg"
-                                                placeholder="Insira seu endereço" />
-                                            <label class="form-label" for="formEndereco">Endereço</label>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-md-6" style="background-color: #e9ecef;">
-                                    <form><br><br><br>
-                                        <!-- Email input -->
-                                        <div data-mdb-input-init class="form-outline mb-4">
-                                            <input type="email" id="formEmail" class="form-control form-control-lg"
-                                                placeholder="Insira seu email" />
-                                            <label class="form-label" for="formEmail">Email</label>
-                                        </div>
+                                    <!-- Endereço input -->
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input type="text" id="formEndereco" class="form-control form-control-lg"
+                                            placeholder="Insira seu endereço" />
+                                        <label class="form-label" for="formEndereco">Endereço</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-6" style="background-color: #e9ecef;">
+                                <form><br><br><br>
+                                    <!-- Email input -->
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input type="email" id="formEmail" class="form-control form-control-lg"
+                                            placeholder="Insira seu email" />
+                                        <label class="form-label" for="formEmail">Email</label>
+                                    </div>
 
-                                        <!-- Usuário input -->
-                                        <div data-mdb-input-init class="form-outline mb-4">
-                                            <input type="text" id="formUsuario" class="form-control form-control-lg"
-                                                placeholder="Insira seu usuário" />
-                                            <label class="form-label" for="formUsuario">Usuário</label>
-                                        </div>
+                                    <!-- Usuário input -->
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input type="text" id="formUsuario" class="form-control form-control-lg"
+                                            placeholder="Insira seu usuário" />
+                                        <label class="form-label" for="formUsuario">Usuário</label>
+                                    </div>
 
-                                        <!-- Senha input -->
-                                        <div data-mdb-input-init class="form-outline mb-4">
-                                            <input type="password" id="formSenha" class="form-control form-control-lg"
-                                                placeholder="Insira sua senha" />
-                                            <label class="form-label" for="formSenha">Senha</label>
-                                        </div>
+                                    <!-- Senha input -->
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input type="password" id="formSenha" class="form-control form-control-lg"
+                                            placeholder="Insira sua senha" />
+                                        <label class="form-label" for="formSenha">Senha</label>
+                                    </div>
 
-                                        <!-- Nível Escolar select -->
-                                        <div data-mdb-input-init class="form-outline mb-4">
-                                            <select id="formNivelEscolar" class="form-control form-control-lg">
-                                                <option value="" disabled selected>Selecione seu nível escolar</option>
-                                                <option value="fundamental1">Ensino Fundamental I</option>
-                                                <option value="fundamental2">Ensino Fundamental II</option>
-                                                <option value="medio">Ensino Médio</option>
-                                            </select>
-                                            <label class="form-label" for="formNivelEscolar">Nível Escolar</label>
-                                        </div>
-                                        <div data-mdb-input-init class="form-outline mb-4">
-                                            <input type="number" id="formIdade" class="form-control form-control-lg"
-                                                placeholder="Insira seu ano escolar" />
-                                            <label class="form-label" for="formIdade">Ano Escolar</label>
-                                        </div>
+                                    <!-- Nível Escolar select -->
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <select id="formNivelEscolar" class="form-control form-control-lg">
+                                            <option value="" disabled selected>Selecione seu nível escolar</option>
+                                            <option value="fundamental1">Ensino Fundamental I</option>
+                                            <option value="fundamental2">Ensino Fundamental II</option>
+                                            <option value="medio">Ensino Médio</option>
+                                        </select>
+                                        <label class="form-label" for="formNivelEscolar">Nível Escolar</label>
+                                    </div>
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input type="number" id="formIdade" class="form-control form-control-lg"
+                                            placeholder="Insira seu ano escolar" />
+                                        <label class="form-label" for="formIdade">Ano Escolar</label>
+                                    </div>
 
-                                        <!-- Mentoria Particular checkbox -->
-                                        <div class="form-check mb-4">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="formMentoria" />
-                                            <label class="form-check-label" for="formMentoria">
-                                                Precisa de mentoria particular
-                                            </label>
-                                        </div>
+                                    <!-- Mentoria Particular checkbox -->
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" value="" id="formMentoria" />
+                                        <label class="form-check-label" for="formMentoria">
+                                            Precisa de mentoria particular
+                                        </label>
+                                    </div>
 
-                                        <div class="text-center text-lg-start mt-4 pt-2">
-                                            <button type="submit" class="btn btn-primary btn-lg"
-                                                style="padding-left: 2.5rem; padding-right: 2.5rem;">Inscrever-se</button>
-                                        </div>
-                                        <br>
-                                    </form>
-                                </div>
+                                    <div class="text-center text-lg-start mt-4 pt-2">
+                                        <button type="submit" class="btn btn-primary btn-lg"
+                                            style="padding-left: 2.5rem; padding-right: 2.5rem;">Inscrever-se</button>
+                                    </div>
+                                    <br>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
 
 
 
 
 
-        </div>
+    </div>
 
     </main>
 
