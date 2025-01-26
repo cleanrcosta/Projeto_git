@@ -30,35 +30,18 @@
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0" style="margin-right: 100px;">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Área do aluno </a>
+                        <a class="nav-link" href="cursos.html">Cursos </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="sobre.html">Sobre nós </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato </a>
+                        <a class="nav-link" href="contato.html">Fale Conosco </a>
                     </li>
 
-                    <!--  <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             Dropdown
-           </a>
-           <ul class="dropdown-menu">
-             <li><a class="dropdown-item" href="#">Action</a></li>
-             <li><a class="dropdown-item" href="#">Another action</a></li>
-             <li><hr class="dropdown-divider"></li>
-             <li><a class="dropdown-item" href="#">Something else here</a></li>
-           </ul>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-         </li> -->
                 </ul>
-                <form class="d-flex ms-auto" role="search" style="display: flex; ">
-                    <input class="form-control me-2" type="search" placeholder="Faça sua busca"
-                        aria-label="Faça sua busca" ">
-                   <button class=" btn btn-outline-success me-2" type="submit">Buscar</button>
-                </form>
+                <button class="d-flex ms-auto btn btn-outline-success me-2 btn btn-primary btn-lg"type="button" onclick="window.location.href='inscricao.html'">Matricule-se Já!</button>
+                <button class="d-flex ms-auto btn btn-outline-success me-2" type="button" onclick="window.location.href='login.html'">LOGIN</button>
 
             </div>
 
@@ -68,9 +51,9 @@
     <!--  O CORPO DA PÁGINA COMEÇA AQUI E VAI ATÉ O COMENTARIO "RODAPÉ" -->
 
     <!-- //O BR voce pode diminuir, ou tirar -->
-    <br><br><br><br><br>
+    <br><br><br>
     <div class="">
-        <section class="cadastro">
+        <section class="cadastro" >
             <div class="container-fluid h-custom">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="img-cadastro col-md-4">
@@ -79,94 +62,106 @@
                     </div>
                     <div class="col-md-7">
                         <div class="row">
-                            <div class="col-md-6" style="background-color: #f8f9fa; ">
-                                <form><br>
+                            <div class="col-md-6" style="background-color: #f8f9fa; border-end-start-radius: 50px; border-top-left-radius: 50px; ">
+                                <form class=""style="border-radius: 50px;"><br>
                                     <div class="divider d-flex align-items-center my-4">
-                                        <p class="text-center fw-bold mx-3 mb-0">Formulário de Inscrição</p>
+                                        <p class="subtitulo"> <strong>Preencha o formulário abaixo para acessar os cursos disponíveis:</strong></p>
                                     </div>
 
                                     <!-- Nome input -->
                                     <div data-mdb-input-init class="form-outline mb-4">
+                                        <label class="form-label" for="formNome">Nome</label>
                                         <input type="text" id="formNome" class="form-control form-control-lg"
                                             placeholder="Insira seu nome" />
-                                        <label class="form-label" for="formNome">Nome</label>
+                                       
                                     </div>
 
                                     <!-- RG input -->
                                     <div data-mdb-input-init class="form-outline mb-4">
+                                        <label class="form-label" for="formRG">RG</label>
                                         <input type="text" id="formRG" class="form-control form-control-lg"
                                             placeholder="Insira seu RG" />
-                                        <label class="form-label" for="formRG">RG</label>
+                                       
                                     </div>
 
                                     <!-- Idade input -->
                                     <div data-mdb-input-init class="form-outline mb-4">
+                                        <label class="form-label" for="formIdade">Idade</label>
                                         <input type="number" id="formIdade" class="form-control form-control-lg"
                                             placeholder="Insira sua idade" />
-                                        <label class="form-label" for="formIdade">Idade</label>
+                                       
                                     </div>
 
                                     <!-- Ano de Nascimento input -->
                                     <div data-mdb-input-init class="form-outline mb-4">
+                                        <label class="form-label" for="formAnoNascimento">Ano de Nascimento</label>
                                         <input type="number" id="formAnoNascimento" class="form-control form-control-lg"
                                             placeholder="Insira seu ano de nascimento" />
-                                        <label class="form-label" for="formAnoNascimento">Ano de Nascimento</label>
+                                        
                                     </div>
 
                                     <!-- Endereço input -->
                                     <div data-mdb-input-init class="form-outline mb-4">
+                                        <label class="form-label" for="formEndereco">Endereço</label>
                                         <input type="text" id="formEndereco" class="form-control form-control-lg"
                                             placeholder="Insira seu endereço" />
-                                        <label class="form-label" for="formEndereco">Endereço</label>
+                                       
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-md-6" style="background-color: #e9ecef;">
+                            <div class="col-md-6" style="background-color: #e9ecef; border-end-end-radius: 50px;border-top-right-radius: 50px;">
                                 <form><br><br><br>
                                     <!-- Email input -->
                                     <div data-mdb-input-init class="form-outline mb-4">
+                                        <label class="form-label" for="formEmail">Email</label>
                                         <input type="email" id="formEmail" class="form-control form-control-lg"
                                             placeholder="Insira seu email" />
-                                        <label class="form-label" for="formEmail">Email</label>
+                                        
                                     </div>
 
                                     <!-- Usuário input -->
                                     <div data-mdb-input-init class="form-outline mb-4">
+                                        <label class="form-label" for="formUsuario">Usuário</label>
                                         <input type="text" id="formUsuario" class="form-control form-control-lg"
                                             placeholder="Insira seu usuário" />
-                                        <label class="form-label" for="formUsuario">Usuário</label>
+                                        
                                     </div>
 
                                     <!-- Senha input -->
                                     <div data-mdb-input-init class="form-outline mb-4">
+                                        <label class="form-label" for="formSenha">Senha</label>
                                         <input type="password" id="formSenha" class="form-control form-control-lg"
                                             placeholder="Insira sua senha" />
-                                        <label class="form-label" for="formSenha">Senha</label>
+                                      
                                     </div>
 
                                     <!-- Nível Escolar select -->
                                     <div data-mdb-input-init class="form-outline mb-4">
                                         <select id="formNivelEscolar" class="form-control form-control-lg">
+                                            <label class="form-label" for="formNivelEscolar">Nível Escolar</label>
                                             <option value="" disabled selected>Selecione seu nível escolar</option>
                                             <option value="fundamental1">Ensino Fundamental I</option>
                                             <option value="fundamental2">Ensino Fundamental II</option>
                                             <option value="medio">Ensino Médio</option>
                                         </select>
-                                        <label class="form-label" for="formNivelEscolar">Nível Escolar</label>
+                                        
                                     </div>
                                     <div data-mdb-input-init class="form-outline mb-4">
+                                        <label class="form-label" for="formIdade">Ano Escolar</label>
                                         <input type="number" id="formIdade" class="form-control form-control-lg"
                                             placeholder="Insira seu ano escolar" />
-                                        <label class="form-label" for="formIdade">Ano Escolar</label>
+                                       
                                     </div>
 
                                     <!-- Mentoria Particular checkbox -->
                                     <div class="form-check mb-4">
                                         <input class="form-check-input" type="checkbox" value="" id="formMentoria" />
                                         <label class="form-check-label" for="formMentoria">
-                                            Precisa de mentoria particular
+                                          Necessito de mentoria particular
                                         </label>
-                                    </div>
+                                        <small class="form-text text-muted">Mentoria particular oferece orientação personalizada para ajudar você a alcançar seus objetivos específicos, selecione essa opção para entrarmos em contato com você (Sujeito a cobrança de mensalidades).</small>
+                                      </div>
+                                      
 
                                     <div class="text-center text-lg-start mt-4 pt-2">
                                         <button type="submit" class="btn btn-primary btn-lg"
@@ -192,74 +187,38 @@
 
     <!-- RODAPÉ -->
     <div></div>
-    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br> 
     <hr>
     <br><br>
     <div></div>
-    <footer class=" text-light" style="background-color:#abb4bb75 ; ">
-        <div class="">
-            <div class="row">
-                <div class="col-4">
-                    <ul class="nav flex-column" style="text-decoration: none; color: rgb(103, 141, 175);">
-                        <br><br><br>
-                        <li class="nav-link"><a href="#">Retornar a página Inicial</a></li>
-                        <li class="nav-link"><a href="#">Sobre nós</a></li>
-                        <li class="nav-link"><a href="#">Contato</a></li>
-                        <li class="nav-link"><a href="#">Área do aluno</a></li>
-                        <li class="nav-link"><a href="#">Programa Jovem Aprendiz</a></li>
-                        <li class="nav-link"><a href="#">Suporte</a></li>
-                    </ul>
-                </div>
-                <div class="col-8">
-                    <p>
-
-                    </p>
-
-                    <div class="link-rp">
-
-
-                        <p>
-                            <strong>Sobre nós:</strong> Saiba mais sobre nossa missão de oferecer educação inclusiva
-                            e
-                            acessível para todos.
-                        </p>
-
-                        <p><strong>Contato:</strong> Entre em contato conosco para mais informações ou suporte.</p>
-
-                        <p><strong>Suporte:</strong> Precisa de ajuda? Nossa equipe está pronta para assisti-lo.</p>
-
-                        <p><strong>Política de Privacidade:</strong> Leia nossa política de privacidade para
-                            entender
-                            como
-                            protegemos suas informações.</p>
-
-                        <p><strong>Termos de Uso:</strong> Conheça os termos e condições de uso do nosso site e
-                            serviços.
-                        </p> <br><br>
-                        <a href="https://www.seusite.com" target="_blank" style="margin-right: 10px;">
-                            <img src="src/img/icons/facebook.png" alt="Descrição da Imagem"
-                                style="width: 32px; height: 32px;">
-                        </a>
-                        <a href="https://www.seusite.com" target="_blank" style="margin-right: 10px;">
-                            <img src="src/img/icons/instagram.png" alt="Descrição da Imagem"
-                                style="width: 32px; height: 32px;">
-                        </a>
-                        <a href="https://www.seusite.com" target="_blank">
-                            <img src="src/img/icons/twitter-draw-logo.png" alt="Descrição da Imagem"
-                                style="width: 32px; height: 32px;">
-                        </a><br><br>
-                    </div>
-
-
-
-                </div>
+    <footer>
+        <div class="d-flex m-auto justify-content-center" style="background-color:#abb4bb75 ; ">
+          <div class="cont-rp d-block m-auto justify-content-center col-md-9 col-lg-6 col-xl-5" style="display: block; justify-content: center;  align-items: center"><br><br>
+              <a href="https://www.seusite.com" target="_blank" style="margin-left: 180px;">
+                  <img src="src/img/icons/facebook.png" alt="Descrição da Imagem" style="width: 32px; height: 32px;">
+              </a>
+              <a href="https://www.seusite.com" target="_blank">
+                  <img src="src/img/icons/instagram.png" alt="Descrição da Imagem" style="width: 32px; height: 32px;">
+              </a>
+              <a href="https://www.seusite.com" target="_blank">
+                  <img src="src/img/icons/twitter-draw-logo.png" alt="Descrição da Imagem"
+                      style="width: 32px; height: 32px;">
+              </a><br><br>
+              <p class="" style="display: flex; justify-content: center;  align-items: center ;">Desenvolvido com ❤️ por
+                  Elos.</p>
+            
+    
+          </div>
+        </div>
+    
+          <div class="rodape d-flex m-auto justify-content-center col-md-9 col-lg-6 col-xl-5" style="display: flex; justify-content: center;  align-items: center" >
+            <p class=""style="margin-top: 10px; margin-bottom: 2px;">&copy; 2025 Copyright ELOS
+              - Todos os direitos reservados.</p>
+           
             </div>
-        </div>
-        <div class="text-center" style="background-color:#abb4bb75 ; padding: 20px; color:rgb(103, 141, 175) ;">
-            &copy 2025 Copyright: <a href="#" style="text-decoration: none; color: rgb(103, 141, 175);">ELOS - Uma
-                escola inclusiva à distância (EAD), com acessibilidade exclusiva para pessoas PCD!</a>
-        </div>
-    </footer>
+          </footer>
+    </body>
+    </html>
     </div>
 </body>
 
