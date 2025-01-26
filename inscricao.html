@@ -11,7 +11,54 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>ELOS - Uma escola inclusiva à distância (EAD), com acessibilidade exclusiva para pessoas PCD!</title>
+    <style>
+      
+      
+      .dropdown {
+      position: relative;
+      display: inline-block;
+    }
 
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content label {
+      display: block;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+
+    .dropdown-content label:hover {
+      background-color: #f1f1f1;
+    }
+
+    .select-button {
+      background-color: #8cc702;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition-duration: 0.4s;
+    }
+
+    .select-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+      
 </head>
 
 <body
@@ -80,29 +127,33 @@
 
                                     </div>
 
-                                    <!-- RG input -->
+                                     <!-- Ano de Nascimento input -->
+                                     <label for="dataNascimento"><strong>Data de Nascimento:<br></strong></label>
+                                     <input type="date" id="dataNascimento" name="dataNascimento">
+
+                                    <!-- CPF input -->
                                     <div data-mdb-input-init class="form-outline mb-4">
-                                        <label class="form-label" for="formRG">RG</label>
+                                        <label class="form-label" for="formRG"><br>CPF</label>
                                         <input type="text" id="formRG" class="form-control form-control-lg"
-                                            placeholder="Insira seu RG" />
+                                            placeholder="Insira seu CPF" />
 
                                     </div>
 
-                                    <!-- Idade input -->
+                                    <!-- Telefone input -->
                                     <div data-mdb-input-init class="form-outline mb-4">
-                                        <label class="form-label" for="formIdade">Idade</label>
-                                        <input type="number" id="formIdade" class="form-control form-control-lg"
-                                            placeholder="Insira sua idade" />
+                                        <label class="form-label" for="telefone">Telefone</label>
+                                        <input type="tel" id="telefone" class="form-control form-control-lg" placeholder="(DDD) 99999-9999" />
+                                      </div>
 
-                                    </div>
-
-                                    <!-- Ano de Nascimento input -->
+                                      <!-- CEP input -->
                                     <div data-mdb-input-init class="form-outline mb-4">
-                                        <label class="form-label" for="formAnoNascimento">Ano de Nascimento</label>
-                                        <input type="number" id="formAnoNascimento" class="form-control form-control-lg"
-                                            placeholder="Insira seu ano de nascimento" />
+                                        <label class="form-label" for="telefone">CEP</label>
+                                        <input type="tel" id="telefone" class="form-control form-control-lg" placeholder="Insira o seu CEP" />
+                                      </div>
+                                      
 
-                                    </div>
+                                   
+
 
                                     <!-- Endereço input -->
                                     <div data-mdb-input-init class="form-outline mb-4">
@@ -111,6 +162,47 @@
                                             placeholder="Insira seu endereço" />
 
                                     </div>
+                                    <div class="dropdown">
+                                        <label class="form-label" for="formEndereco">Cursos</label><br>
+                                        <button class="select-button" onclick="toggleDropdown(event)">Selecione os cursos de interesse</button>
+                                        <div class="dropdown-content" id="dropdownCursos">
+                                          <label><input type="checkbox" value="word"> Curso Básico de Word</label>
+                                          <label><input type="checkbox" value="excel"> Curso Básico de Excel</label>
+                                          <label><input type="checkbox" value="powerbi"> Curso Básico de Power BI</label>
+                                          <label><input type="checkbox" value="internet"> Curso Básico de Internet</label>
+                                        </div>
+                                      </div>
+                                      <br><br><br><br>
+                                      
+
+                                <!--     <div class="form-group mb-4">
+                                        <label for="tipoDeficiencia">TIPO DE DEFICIÊNCIA:</label><br>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="fisica" id="deficienciaFisica">
+                                          <label class="form-check-label" for="deficienciaFisica">Física</label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="auditiva" id="deficienciaAuditiva">
+                                          <label class="form-check-label" for="deficienciaAuditiva">Auditiva</label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="visual" id="deficienciaVisual">
+                                          <label class="form-check-label" for="deficienciaVisual">Visual</label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="intelectual" id="deficienciaIntelectual">
+                                          <label class="form-check-label" for="deficienciaIntelectual">Intelectual</label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="psicossocial" id="deficienciaPsicossocial">
+                                          <label class="form-check-label" for="deficienciaPsicossocial">Psicossocial ou por Saúde Mental</label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="multipla" id="deficienciaMultipla">
+                                          <label class="form-check-label" for="deficienciaMultipla">Múltipla</label>
+                                        </div>
+                                      </div> -->
+                                      
                                 </form>
                             </div>
                             <div class="col-md-6"
@@ -140,42 +232,29 @@
 
                                     </div>
 
-                                    <!-- Nível Escolar select -->
+                                    <div class="dropdown">
+                                        <label class="form-label" for="formEndereco">Selecione o tipo de deficiência que possui</label><br>
+                                        <button class="select-button" onclick="toggleDropdown(event)">Selecionar deficiência</button>
+                                        <div class="dropdown-content" id="dropdownDeficiencias">
+                                          <label><input type="checkbox" value="fisica"> Física</label>
+                                          <label><input type="checkbox" value="auditiva"> Auditiva</label>
+                                          <label><input type="checkbox" value="visual"> Visual</label>
+                                          <label><input type="checkbox" value="intelectual"> Intelectual</label>
+                                          <label><input type="checkbox" value="psicossocial"> Psicossocial ou por Saúde Mental</label>
+                                          <label><input type="checkbox" value="multipla"> Múltipla</label>
+                                        </div>
+                                      </div>
                                     
-                                        <label for="cursos"><strong>Selecione os cursos de
-                                                interesse:<br></strong></label><br>
-                                        <div class="form-check"><br>
-                                            <input class="form-check-input" type="checkbox" value="word" id="cursoWord">
-                                            <label class="form-check-label" for="cursoWord">Curso Básico de Word</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="excel"
-                                                id="cursoExcel">
-                                            <label class="form-check-label" for="cursoExcel">Curso Básico de
-                                                Excel</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="powerbi"
-                                                id="cursoPowerBI">
-                                            <label class="form-check-label" for="cursoPowerBI">Curso Básico de Power
-                                                BI</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="internet"
-                                                id="cursoInternet">
-                                            <label class="form-check-label" for="cursoInternet">Curso Básico de
-                                                Internet</label>
-                                        </div>
 
-                                        <label for="mensagem" class="form-label">Mensagem</label>
-                                        <textarea id="mensagem" class="form-control" rows="4"
-                                            placeholder="Escreva sua mensagem aqui"></textarea>
-
-                                        <div class="text-center text-lg-start mt-4 pt-2">
-                                            <button type="submit" class="btn btn-primary btn-lg"
-                                                style="padding-left: 2.5rem; padding-right: 2.5rem;">Inscrever-se</button>
-                                        </div> <br><br>
-                                    </form>
+                                    <label for="mensagem" class="form-label"><br><br>Descrição</label>
+                                    <textarea id="mensagem" class="form-control" rows="4"
+                                        placeholder="Descreva sua deficiência"></textarea>
+                                        <br><br><br><br>
+                                    <div class="text-center text-lg-start mt-4 pt-2" style="margin-bottom: 0px;">
+                                        <CENTER><button type="submit" class="btn btn-primary btn-lg"
+                                            style="padding-left: 2.5rem; padding-right: 2.5rem;margin-bottom: 0px;">REALIZAR CADASTRO!</button></CENTER>
+                                    </div> <br><br>
+                                </form>
 
                             </div>
                             <br>
@@ -197,23 +276,37 @@
     <div></div>
     <footer class="footer">
         <div class="footer-content">
-          <div class="social-icons">
-            <a href="#" class="social-icon" target="_blank">
-              <img src="src/img/icons/facebook.png" alt="Facebook">
-            </a>
-            <a href="#" class="social-icon" target="_blank">
-              <img src="src/img/icons/instagram.png" alt="Twitter">
-            </a>
-            <a href="#" class="social-icon" target="_blank">
-              <img src="src/img/icons/twitter.png" alt="Instagram">
-            </a>
-          </div>
-          <div class="footer-text">
-            <p class="sobre">&copy; 2025 Elos. Todos os direitos reservados.</p>
-            <p class="sobre">Desenvolvido com ❤️ por Elos.</p>
-          </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon" target="_blank">
+                    <img src="src/img/icons/facebook.png" alt="Facebook">
+                </a>
+                <a href="#" class="social-icon" target="_blank">
+                    <img src="src/img/icons/instagram.png" alt="Twitter">
+                </a>
+                <a href="#" class="social-icon" target="_blank">
+                    <img src="src/img/icons/twitter.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="footer-text">
+                <p class="sobre">&copy; 2025 Elos. Todos os direitos reservados.</p>
+                <p class="sobre">Desenvolvido com ❤️ por Elos.</p>
+            </div>
         </div>
-      </footer>
+    </footer>
+
+        <!-- Dropbox para inscricao -->
+
+        <script>
+            function toggleDropdown(event) {
+              event.preventDefault(); // Previne o comportamento padrão do botão
+              var dropdownContent = document.getElementById(event.target.nextElementSibling.id);
+              if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+              } else {
+                dropdownContent.style.display = "block";
+              }
+            }
+          </script>
 
 </body>
 
