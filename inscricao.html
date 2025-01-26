@@ -40,8 +40,10 @@
                     </li>
 
                 </ul>
-                <button class="d-flex ms-auto btn btn-outline-success me-2 btn btn-primary btn-lg"type="button" onclick="window.location.href='inscricao.html'">Matricule-se Já!</button>
-                <button class="d-flex ms-auto btn btn-outline-success me-2" type="button" onclick="window.location.href='login.html'">LOGIN</button>
+                <button class="d-flex ms-auto btn btn-outline-success me-2 btn btn-primary btn-lg" type="button"
+                    onclick="window.location.href='inscricao.html'">Matricule-se Já!</button>
+                <button class="d-flex ms-auto btn btn-outline-success me-2" type="button"
+                    onclick="window.location.href='login.html'">LOGIN</button>
 
             </div>
 
@@ -53,7 +55,7 @@
     <!-- //O BR voce pode diminuir, ou tirar -->
     <br><br><br>
     <div class="">
-        <section class="cadastro" >
+        <section class="cadastro">
             <div class="container-fluid h-custom">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="img-cadastro col-md-4">
@@ -62,10 +64,12 @@
                     </div>
                     <div class="col-md-7">
                         <div class="row">
-                            <div class="col-md-6" style="background-color: #f8f9fa; border-end-start-radius: 50px; border-top-left-radius: 50px; ">
-                                <form class=""style="border-radius: 50px;"><br>
+                            <div class="col-md-6"
+                                style="background-color: #f8f9fa; border-end-start-radius: 50px; border-top-left-radius: 50px; ">
+                                <form class="" style="border-radius: 50px;"><br>
                                     <div class="divider d-flex align-items-center my-4">
-                                        <p class="subtitulo"> <strong>Preencha o formulário abaixo para acessar os cursos disponíveis:</strong></p>
+                                        <p class="subtitulo"> <strong>Preencha o formulário abaixo para acessar os
+                                                cursos disponíveis:</strong></p>
                                     </div>
 
                                     <!-- Nome input -->
@@ -73,7 +77,7 @@
                                         <label class="form-label" for="formNome">Nome</label>
                                         <input type="text" id="formNome" class="form-control form-control-lg"
                                             placeholder="Insira seu nome" />
-                                       
+
                                     </div>
 
                                     <!-- RG input -->
@@ -81,7 +85,7 @@
                                         <label class="form-label" for="formRG">RG</label>
                                         <input type="text" id="formRG" class="form-control form-control-lg"
                                             placeholder="Insira seu RG" />
-                                       
+
                                     </div>
 
                                     <!-- Idade input -->
@@ -89,7 +93,7 @@
                                         <label class="form-label" for="formIdade">Idade</label>
                                         <input type="number" id="formIdade" class="form-control form-control-lg"
                                             placeholder="Insira sua idade" />
-                                       
+
                                     </div>
 
                                     <!-- Ano de Nascimento input -->
@@ -97,7 +101,7 @@
                                         <label class="form-label" for="formAnoNascimento">Ano de Nascimento</label>
                                         <input type="number" id="formAnoNascimento" class="form-control form-control-lg"
                                             placeholder="Insira seu ano de nascimento" />
-                                        
+
                                     </div>
 
                                     <!-- Endereço input -->
@@ -105,18 +109,19 @@
                                         <label class="form-label" for="formEndereco">Endereço</label>
                                         <input type="text" id="formEndereco" class="form-control form-control-lg"
                                             placeholder="Insira seu endereço" />
-                                       
+
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-md-6" style="background-color: #e9ecef; border-end-end-radius: 50px;border-top-right-radius: 50px;">
+                            <div class="col-md-6"
+                                style="background-color: #e9ecef; border-end-end-radius: 50px;border-top-right-radius: 50px;">
                                 <form><br><br><br>
                                     <!-- Email input -->
                                     <div data-mdb-input-init class="form-outline mb-4">
                                         <label class="form-label" for="formEmail">Email</label>
                                         <input type="email" id="formEmail" class="form-control form-control-lg"
                                             placeholder="Insira seu email" />
-                                        
+
                                     </div>
 
                                     <!-- Usuário input -->
@@ -124,7 +129,7 @@
                                         <label class="form-label" for="formUsuario">Usuário</label>
                                         <input type="text" id="formUsuario" class="form-control form-control-lg"
                                             placeholder="Insira seu usuário" />
-                                        
+
                                     </div>
 
                                     <!-- Senha input -->
@@ -132,94 +137,88 @@
                                         <label class="form-label" for="formSenha">Senha</label>
                                         <input type="password" id="formSenha" class="form-control form-control-lg"
                                             placeholder="Insira sua senha" />
-                                      
+
                                     </div>
 
                                     <!-- Nível Escolar select -->
-                                    <div data-mdb-input-init class="form-outline mb-4">
-                                        <select id="formNivelEscolar" class="form-control form-control-lg">
-                                            <label class="form-label" for="formNivelEscolar">Nível Escolar</label>
-                                            <option value="" disabled selected>Selecione seu nível escolar</option>
-                                            <option value="fundamental1">Ensino Fundamental I</option>
-                                            <option value="fundamental2">Ensino Fundamental II</option>
-                                            <option value="medio">Ensino Médio</option>
-                                        </select>
-                                        
-                                    </div>
-                                    <div data-mdb-input-init class="form-outline mb-4">
-                                        <label class="form-label" for="formIdade">Ano Escolar</label>
-                                        <input type="number" id="formIdade" class="form-control form-control-lg"
-                                            placeholder="Insira seu ano escolar" />
-                                       
-                                    </div>
+                                    
+                                        <label for="cursos"><strong>Selecione os cursos de
+                                                interesse:<br></strong></label><br>
+                                        <div class="form-check"><br>
+                                            <input class="form-check-input" type="checkbox" value="word" id="cursoWord">
+                                            <label class="form-check-label" for="cursoWord">Curso Básico de Word</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="excel"
+                                                id="cursoExcel">
+                                            <label class="form-check-label" for="cursoExcel">Curso Básico de
+                                                Excel</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="powerbi"
+                                                id="cursoPowerBI">
+                                            <label class="form-check-label" for="cursoPowerBI">Curso Básico de Power
+                                                BI</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="internet"
+                                                id="cursoInternet">
+                                            <label class="form-check-label" for="cursoInternet">Curso Básico de
+                                                Internet</label>
+                                        </div>
 
-                                    <!-- Mentoria Particular checkbox -->
-                                    <div class="form-check mb-4">
-                                        <input class="form-check-input" type="checkbox" value="" id="formMentoria" />
-                                        <label class="form-check-label" for="formMentoria">
-                                          Necessito de mentoria particular
-                                        </label>
-                                        <small class="form-text text-muted">Mentoria particular oferece orientação personalizada para ajudar você a alcançar seus objetivos específicos, selecione essa opção para entrarmos em contato com você (Sujeito a cobrança de mensalidades).</small>
-                                      </div>
-                                      
+                                        <label for="mensagem" class="form-label">Mensagem</label>
+                                        <textarea id="mensagem" class="form-control" rows="4"
+                                            placeholder="Escreva sua mensagem aqui"></textarea>
 
-                                    <div class="text-center text-lg-start mt-4 pt-2">
-                                        <button type="submit" class="btn btn-primary btn-lg"
-                                            style="padding-left: 2.5rem; padding-right: 2.5rem;">Inscrever-se</button>
-                                    </div>
-                                    <br>
-                                </form>
+                                        <div class="text-center text-lg-start mt-4 pt-2">
+                                            <button type="submit" class="btn btn-primary btn-lg"
+                                                style="padding-left: 2.5rem; padding-right: 2.5rem;">Inscrever-se</button>
+                                        </div> <br><br>
+                                    </form>
+
                             </div>
+                            <br>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-
-
-
-
-
     </div>
-
+    </section>
+    </div>
     </main>
 
     <!-- RODAPÉ -->
     <div></div>
-    <br><br><br><br><br> 
+    <br><br><br><br><br>
     <hr>
     <br><br>
     <div></div>
-    <footer>
-        <div class="d-flex m-auto justify-content-center" style="background-color:#abb4bb75 ; ">
-          <div class="cont-rp d-block m-auto justify-content-center col-md-9 col-lg-6 col-xl-5" style="display: block; justify-content: center;  align-items: center"><br><br>
-              <a href="https://www.seusite.com" target="_blank" style="margin-left: 180px;">
-                  <img src="src/img/icons/facebook.png" alt="Descrição da Imagem" style="width: 32px; height: 32px;">
-              </a>
-              <a href="https://www.seusite.com" target="_blank">
-                  <img src="src/img/icons/instagram.png" alt="Descrição da Imagem" style="width: 32px; height: 32px;">
-              </a>
-              <a href="https://www.seusite.com" target="_blank">
-                  <img src="src/img/icons/twitter-draw-logo.png" alt="Descrição da Imagem"
-                      style="width: 32px; height: 32px;">
-              </a><br><br>
-              <p class="" style="display: flex; justify-content: center;  align-items: center ;">Desenvolvido com ❤️ por
-                  Elos.</p>
-            
-    
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="social-icons">
+            <a href="#" class="social-icon" target="_blank">
+              <img src="src/img/icons/facebook.png" alt="Facebook">
+            </a>
+            <a href="#" class="social-icon" target="_blank">
+              <img src="src/img/icons/instagram.png" alt="Twitter">
+            </a>
+            <a href="#" class="social-icon" target="_blank">
+              <img src="src/img/icons/twitter.png" alt="Instagram">
+            </a>
+          </div>
+          <div class="footer-text">
+            <p class="sobre">&copy; 2025 Elos. Todos os direitos reservados.</p>
+            <p class="sobre">Desenvolvido com ❤️ por Elos.</p>
           </div>
         </div>
-    
-          <div class="rodape d-flex m-auto justify-content-center col-md-9 col-lg-6 col-xl-5" style="display: flex; justify-content: center;  align-items: center" >
-            <p class=""style="margin-top: 10px; margin-bottom: 2px;">&copy; 2025 Copyright ELOS
-              - Todos os direitos reservados.</p>
-           
-            </div>
-          </footer>
-    </body>
-    </html>
-    </div>
+      </footer>
+
+</body>
+
+</html>
+</div>
 </body>
 
 </html>
