@@ -515,4 +515,105 @@ select.form-control {
     }
     
 }
-    
+
+
+/* SOBRE */
+body .sobre {
+    font-family: 'Arial', sans-serif;
+    color: #f8f8f8;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main .container-sobre {
+    padding: 20px;
+  }
+  
+ 
+  
+  h1 .sobre {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  h2 .sobre {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  p .sobre {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align:center;
+  }
+  
+  .lead-sobre {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  .list-group {
+    color: #ffffff;
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  
+  .list-group-item {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 1rem;
+  }
+  
+ 
+  
+  .container-sobre {
+    max-width: 900px;
+    margin:auto;
+}
+
+
+/* Rodapé */
+.footer {
+    background-color: #b7cad6;
+    color: rgb(4, 4, 4);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .social-icons {
+    margin-bottom: 20px;
+  }
+  
+  .social-icon {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .social-icon img {
+    width: 30px; /* Tamanho dos ícones */
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover img {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+  }
+  
+  .footer-text p {
+    margin: 5px 0;
+    font-size:0.9em;
+}
