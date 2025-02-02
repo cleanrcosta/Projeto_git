@@ -1,0 +1,5 @@
+CREATE TABLE contato_elos (
+ID_contato_elos VARCHAR(10) PRIMARY KEY,
+telefone VARCHAR(8),
+duvida VARCHAR(200)
+)
