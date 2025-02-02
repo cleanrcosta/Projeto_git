@@ -14,4 +14,12 @@
 
 ## ✔️ PROJETO | SOLUÇÃO 
 
+ <img src="src/img/squad/slide01.jpg">
+ <img src="src/img/squad/slide02.jpg">
+ <img src="src/img/squad/slide03.jpg">
+ <img src="src/img/squad/slide04.jpg">
+ <img src="src/img/squad/slide05.jpg">
+ <img src="src/img/squad/slide06.jpg">
+ <img src="src/img/squad/slide07.jpg">
+<img src="src/img/squad/slide08.jpg">
 
