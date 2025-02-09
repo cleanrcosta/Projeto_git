@@ -20,6 +20,12 @@
  <img src="src/img/squad/slide04.jpg">
  <img src="src/img/squad/slide05.jpg">
  <img src="src/img/squad/slide06.jpg">
- <img src="src/img/squad/slide07.jpg">
-<img src="src/img/squad/slide08.jpg">
+ <img src="src/img/squad/slide7.jpg">
+  <img src="src/img/squad/slide8.jpg">
+    <img src="src/img/squad/slide9.jpg">
+  <img src="src/img/squad/slide10.jpg">
+  <img src="src/img/squad/slide11.jpg">
+
+
+
 
